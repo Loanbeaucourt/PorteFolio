@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO SISR - Loan Beaucourt</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- importe typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#certifications">certifications</a></li>
+                <li><a href="#experiences">Expériences Professionnelles</a></li>
+                <li><a href="#contact">Contact</a></li> <!-- Lien vers le footer -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Accueil - Version améliorée -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <!-- Texte animé (ex: "Étudiant en BTS SIO") -->
+            <h1>Loan <span class="highlight">Beaucourt</span></h1>
+            <p class="animated-text">Je suis <span class="typing"></span></p>
+        
+            <!-- Boutons -->
+            <div class="hero-buttons">
+                <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+        
+            <!-- Flèche de scroll -->
+            <a href="#profil" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section Profil -->
+    <section id="profil" class="section">
+        <h2>Profil</h2>
+        <div class="profil-content">
+            <img src="images/profil.jpg" alt="Ma photo" class="profil-img">
+            <div class="profil-text">
+                <h3>Qui suis-je ?</h3>
+                <p>
+                    Étudiant en BTS SIO (option SISR) à Lannion, je me spécialise dans l’administration système, la virtualisation et la sécurité réseau. Curieux et autonome, j’expérimente différentes technologies comme Proxmox et OpenVPN.
+                    J’intègrerai bientôt une alternance, où je pourrai appliquer mes compétences tout en continuant à apprendre et à évoluer dans un cadre professionnel.
+                </p>
+                <a href="docs/CV.pdf" class="btn" download>Télécharger mon CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Réseaux</h3>
+                <p>Configuration switch/router, VLAN, IPv4</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-server"></i>
+                <h3>Administration Système</h3>
+                <p>Windows Server, Linux (Ubuntu, Debian), virtualisation (Proxmox, VmWare)</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Cybersécurité</h3>
+                <p>Firewall (ufw, pfsense, snort)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets - Version NAS -->
+    <section id="projets" class="section">
+        <h2>Mes Projets</h2>
+        <div class="nas-rack">
+            <!-- Disque 1 -->
+            <div class="hard-drive" data-project="cisco">
+                <div class="drive-front">
+                    <div class="drive-led"></div>
+                    <span class="drive-label">Projet 1ere année semestre 1  &#x25BC; </span>
+                </div>
+                <div class="drive-shell">
+                    <div class="terminal">
+                        <!-- Commande -->
+                        <div class="terminal-line command">$ ssh root@WebNetwork</div>
+                        
+                        <!-- Output avec indentations -->
+                        <div class="terminal-line output">> Objectifs :</div>
+                        <div class="terminal-line output indent">- 2 réseaux différents</search></div>
+                        <div class="terminal-line output indent">- 3 Vlans </search></div>
+                        <div class="terminal-line output indent">- un réseau web complet: Serv WEB, DNS, RDP</div>
+                        <div class="terminal-line output indent">- afficher le bon fonctionnement du site sur une télé dans un autre réseau</div>
+                        <div class="terminal-line output">> machines montés et utilisés</div>
+                        <div class="terminal-line output indent">- Debian 12 virtuel : Serv WEB, RDP, DNS</div>
+                        <div class="terminal-line output indent">- physique : Routeur Cisco, Axel, Switch Cisco</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disque 2 -->
+            <div class="hard-drive" data-project="cisco">
+                <div class="drive-front">
+                    <div class="drive-led"></div>
+                    <span class="drive-label">Projet 1ere année semestre 2  &#x25BC;</span>
+                </div>
+                <div class="drive-shell">
+                    <div class="terminal">
+                        <!-- Commande -->
+                        <div class="terminal-line command">$ ssh admin@Geltram</div>
+                        
+                        <!-- Output avec indentations -->
+                        <div class="terminal-line output">> Objectifs :</div>
+                        <div class="terminal-line output indent">- 3 réseaux différents : LAN, WAN, DMZ</search></div>
+                        <div class="terminal-line output indent">- 5 Vlans </search></div>
+                        <div class="terminal-line output indent">- un réseau d'entreprise complet: AD, DHCP, DNS, FOG, GLPI, WSUS, </div>
+                        <div class="terminal-line output indent">- Étanchéité total des réseaux, sécurisation des entités </div>
+                        <div class="terminal-line output">> machines montés et utilisés :</div>
+                        <div class="terminal-line output indent">- virtuel : Windows serveurs, Debian 12, Windows 11</div>
+                        <div class="terminal-line output indent">- physique : Routeur Cisco, Switch Cisco</div>
+                        <div class="terminal-line output">> services montés et utilisés :</div>
+                        <div class="terminal-line output indent">- Apache2, mariaDb, AD, DNS, DHCP, GLPI, FOG, WSUS, IPAM, Honey Pot, </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Disque 3 -->
+            <div class="hard-drive" data-project="cisco">
+                <div class="drive-front">
+                    <div class="drive-led"></div>
+                    <span class="drive-label">Projet perso 1 en cours &#x25BC;</span>
+                </div>
+                <div class="drive-shell">
+                    <div class="terminal">
+                        <!-- Commande -->
+                        <div class="terminal-line command">$ ssh user@home</div>
+                        
+                        <!-- Output avec indentations -->
+                        <div class="terminal-line output">> Objectifs :</div>
+                        <div class="terminal-line output indent">- Monter un serveur Proxmox personnel</search></div>
+                        <div class="terminal-line output indent">- Heberger plusieurs service </search></div>
+                        <div class="terminal-line output indent">- Monter un accès VPN </div>
+                        <div class="terminal-line output">> Services à monter :</div>
+                        <div class="terminal-line output indent">- un Nas</div>
+                        <div class="terminal-line output indent">- un Serveur Web</div>
+                        <div class="terminal-line output indent">- et d'autres encore</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Certifications -->
+    <section id="certifications" class="section">
+        <h2>Certifications</h2>
+        <div class="certifications-grid">
+            <!-- Certification 1 -->
+            <div class="certification-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>début cybersécurité</h3>
+                <p>Cisco Networking Academy (2025)</p>
+                <a href="docs/ccna1.pdf" class="btn" target="_blank">Voir le certificat</a>
+            </div>
+            <!-- Certification 2 -->
+            <div class="certification-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Mooc RGPD</h3>
+                <p>ANSSI & CNIL(2024)</p>
+                <a href="docs/secnum.pdf" class="btn" target="_blank">Voir le certificat</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expériences -->
+    <section id="experiences" class="section">
+        <h2>Expériences Professionnelles</h2>
+        <div class="timeline">
+            <!-- Expérience 1 -->
+            <div class="timeline-card">
+                <h3>Stage Administrateur Réseaux</h3>
+                <p class="date">Mai 2025 - Juin 2025 </p>
+                <p class="entreprise">CNRS - Roscoff</p>
+                <ul>
+                    <li>coming soon...</li>
+                    <li>coming soon too...</li>
+                </ul>
+            </div>
+            <!-- Expérience 2 -->
+            <div class="timeline-card">
+                <h3>Technicien Support IT</h3>
+                <p class="date">Juillet 2025 - Juillet 2026</p>
+                <p class="entreprise">Guingamp Paimpol Agglomération</p>
+                <ul>
+                    <li>I don't know yet</li>
+                    <li>same</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <!-- Colonne Coordonnées -->
+            <div class="footer-col">
+                <h3><i class="fas fa-address-card"></i> Coordonnées</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Côtes d'Armor France</li>
+                    <li><i class="fas fa-phone"></i> non</li>
+                    <li><i class="fas fa-envelope"></i> maybe</li>
+                </ul>
+            </div>
+    
+            <!-- Colonne Réseaux -->
+            <div class="footer-col">
+                <h3><i class="fas fa-share-alt"></i> Réseaux</h3>
+                <div class="social-links">
+                    <ul>
+                        <li><a href="https://linkedin.com/in/comingsoon" target="_blank"><i class="fab fa-linkedin"></i></a><a href="#" style="pointer-events: none; color: gray; text-decoration: none; font-size: 0.9em; display: inline-flex; align-items: center;"><i class="fas fa-exclamation-circle" style="color: gray; font-size: 1.2em; margin-right: 2px;"></i> Indisponible</a></li>
+                        <li><a href="https://github.com/comingsoon" target="_blank"><i class="fab fa-github"></i></a><a href="#" style="pointer-events: none; color: gray; text-decoration: none; font-size: 0.9em; display: inline-flex; align-items: center;"><i class="fas fa-exclamation-circle" style="color: gray; font-size: 1.2em; margin-right: 2px;"></i> Indisponible</a></li>
+                        <li><a href="https://twitter.com/comingsoon" target="_blank"><i class="fab fa-twitter"></i></a><a href="#" style="pointer-events: none; color: gray; text-decoration: none; font-size: 0.9em; display: inline-flex; align-items: center;"><i class="fas fa-exclamation-circle" style="color: gray; font-size: 1.2em; margin-right: 2px;"></i> Indisponible</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Colonne Téléchargements -->
+            <div class="footer-col">
+                <h3><i class="fas fa-download"></i> Documents</h3>
+                <a href="docs/CV.pdf" download class="doc-link"><i class="fas fa-file-pdf"></i> Mon CV</a>
+                <a href="https://lbwiki.pfsio1.bts-sio.local/doku.php?id=index" download class="doc-link"><i class="fas fa-file-alt"></i> Mon wiki</a>
+            </div>
+        </div>
+    
+        <div class="footer-copyright">
+            <p>&copy; 2024 - Portfolio BTS SIO | Loan Beaucourt</p>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
